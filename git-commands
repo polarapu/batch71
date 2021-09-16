@@ -66,3 +66,50 @@ git status
 git log
 git show cid
 git push
+
+
+Logs
+====
+git log
+git log -n
+git log --oneline
+git log --oneline -n
+git log --author=Prasad
+git log --author=Prasad -n
+git log --author=Prasad --oneline
+git log --author=Prasad --oneline -n
+
+git log --sice=yy-mm-dd
+or
+git log --after=yy-mm-dd
+
+git log --until=yy-mm-dd
+or
+git log --before=yy-mm-dd
+
+git log --since=yy-mm-dd --until=yy-mm-dd
+or
+git log --after=yy-mm-dd --before=yy-mm-dd
+
+
+git log --after="2021-09-14 06:00" --before="2021-09-14 18:30"
+
+git log --grep="label"
+git log -- file/dir
+
+
+Branch
+------
+git branch
+git branch release1
+git checkout release1
+create data
+add, commit
+
+git merge branch-name
+git branch -d branch-name
+
+git push path/of/c-repo branch-name
+or
+git push origin branch-name
+
