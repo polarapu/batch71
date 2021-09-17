@@ -113,3 +113,12 @@ git push path/of/c-repo branch-name
 or
 git push origin branch-name
 
+git config --list
+git config --global alias.cl "config --list"
+git cl
+
+git branch
+git config --global alias.b "branch"
+git b
+
+git config --global --unset alias.cl  (to unset alias)
