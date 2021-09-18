@@ -31,15 +31,24 @@ ls
 git add file3 file4 file5
 or
 git add .
-kdhffbhdsjhfsdjkfgit reset --soft cid  (local to staging)
+or
+git add *
+or
+git add -A
+git status
+git commit -m "all files" 
+
+git status
+git log
+
+--------------------------------
+git reset head file-name (staging/index to workspace)
+git reset --soft cid  (local to staging)
 git reset --mixed cid  (local to workspace)
-fdsfjsdff
-git resetdsjfjsdjf --hard cid  (to delete commit and commit files)
+
+git reset --hard cid  (to delete commit and commit files)
 
 git commit -m "label" file-name  (workspace to loca  only modified files)
-git merge branch-name
-git branch -d branch-name
-
 
 rm -rf file-name (to delete file)
  
@@ -52,7 +61,7 @@ touch prasad
 git status
 git add prasad
 git status
-git commit -m "tesjsdfsdjsadvbudwt commit from prasad"
+git commit -m "test commit from prasad"
 git status
 git log
 git show cid
@@ -67,9 +76,6 @@ git log --oneline
 git log --oneline -n
 git log --author=Prasad
 git log --author=Prasad -n
-git merge branch-name
-git branch -d branch-name
-
 git log --author=Prasad --oneline
 git log --author=Prasad --oneline -n
 
@@ -83,7 +89,7 @@ git log --before=yy-mm-dd
 
 git log --since=yy-mm-dd --until=yy-mm-dd
 or
-git log --after=yy-mm-dd --beforedhuadiowpdm=yy-mm-dd
+git log --after=yy-mm-dd --before=yy-mm-dd
 
 
 git log --after="2021-09-14 06:00" --before="2021-09-14 18:30"
@@ -119,13 +125,10 @@ git l1
 
 git config --list
 git config --global alias.cl "config --list"
-git merge branch-name
-git branch -d branch-name
-
 git cl
 
 git branch
-git config --global alias.b "branch"hdshadhashdhsjd
+git config --global alias.b "branch"
 git b
 
 git config --global --unset alias.cl  (to unset alias)
