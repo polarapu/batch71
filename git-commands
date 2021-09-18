@@ -113,6 +113,16 @@ git push path/of/c-repo branch-name
 or
 git push origin branch-name
 
+Alias
+=====
+git status
+git config --global alias.s "status"
+git s
+
+git log --oneline
+git config --global alias.l1 "log --oneline"
+git l1
+
 git config --list
 git config --global alias.cl "config --list"
 git cl
