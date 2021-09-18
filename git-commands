@@ -28,8 +28,6 @@ git push
 ---------------
 touch file3 file4 file5
 ls
-git add file3 file4 file5
-or
 git add .
 or
 git add *
@@ -112,4 +110,71 @@ git branch -d branch-name
 git push path/of/c-repo branch-name
 or
 git push origin branch-name
+
+Alias
+=====
+git status
+git config --global alias.s "status"
+git s
+
+git log --oneline
+git config --global alias.l1 "log --oneline"
+git l1
+
+git config --list
+git config --global alias.cl "config --list"
+git cl
+
+git branch
+git config --global alias.b "branch"
+git b
+
+git config --global --unset alias.cl  (to unset alias)
+
+vi .gitignore
+=============
+file1
+file2
+
+
+git merge / rebase
+
+
+
+cherry-pick
+----------
+git cherry-pick cid
+
+
+git amend
+-----------
+git commit --amend -m "label"
+
+revert
+-------
+git revert cid
+
+stash
+-----
+git stash list
+git stash save "label"
+git stash show stash@{x}
+git stash show -p stash@{x}
+
+POP, APPLY, DROP
+
+POP - cut
+----------
+git stash pop
+git stash pop stash@{x}
+
+Apply - copy
+------------
+git stash apply
+git stash apply stash@{x}
+
+Drop - delete
+-------------
+git stash drop
+git stash drop stash@{x}
 
